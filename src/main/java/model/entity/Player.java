@@ -14,6 +14,23 @@ public class Player extends BaseEntity {
     public static int CHARACTER_HEIGHT = 91;
 
     private boolean isIdle = true;
+
+    public boolean isIdle() {
+        return isIdle;
+    }
+
+    public boolean isMove() {
+        return isMove;
+    }
+
+    public boolean isDead() {
+        return isDead;
+    }
+
+    public boolean isAttack() {
+        return isAttack;
+    }
+
     private boolean isMove = false;
     private boolean isDead = false;
     private boolean isAttack = false;

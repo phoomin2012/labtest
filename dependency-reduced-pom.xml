@@ -60,6 +60,12 @@
   </pluginRepositories>
   <dependencies>
     <dependency>
+      <groupId>de.saxsys</groupId>
+      <artifactId>jfx-testrunner</artifactId>
+      <version>1.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
@@ -75,5 +81,7 @@
   <properties>
     <maven.compiler.target>12</maven.compiler.target>
     <maven.compiler.source>12</maven.compiler.source>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
 </project>

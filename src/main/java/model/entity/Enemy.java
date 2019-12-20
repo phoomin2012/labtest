@@ -15,6 +15,10 @@ public class Enemy extends BaseEntity {
     private enum SPAWN {LEFT, RIGHT}
     private SPAWN spawn;
 
+    public boolean isDead() {
+        return isDead;
+    }
+
     private boolean isDead = false;
 
     public Enemy(int x, int y) {

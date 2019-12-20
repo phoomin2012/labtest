@@ -12,7 +12,6 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-
         Platform platform = new Platform();
         GameLoop gameLoop = new GameLoop(platform);
 

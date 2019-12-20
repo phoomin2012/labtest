@@ -9,7 +9,7 @@ import view.Platform;
 
 abstract public class BaseEntity extends Pane implements Interface {
 
-    Logger logger = LoggerFactory.getLogger(getClass());
+    protected Logger logger = LoggerFactory.getLogger(getClass());
 
     public static int CHARACTER_WIDTH = 64;
     public static int CHARACTER_HEIGHT = 64;
@@ -28,6 +28,27 @@ abstract public class BaseEntity extends Pane implements Interface {
     protected int yAcceleration = 1;
     protected int xMaxVelocity = 5;
     protected int yMaxVelocity = 5;
+
+    public boolean isCanMove() {
+        return canMove;
+    }
+
+    public boolean isMoveLeft() {
+        return isMoveLeft;
+    }
+
+    public boolean isMoveRight() {
+        return isMoveRight;
+    }
+
+    public boolean isMoveUp() {
+        return isMoveUp;
+    }
+
+    public boolean isMoveDown() {
+        return isMoveDown;
+    }
+
     protected boolean canMove = true;
     protected boolean isMoveLeft = false;
     protected boolean isMoveRight = false;
